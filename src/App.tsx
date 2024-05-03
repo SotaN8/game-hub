@@ -30,7 +30,10 @@ function App() {
       // Genre Sidebar
       <Show above='lg'>
         <GridItem area='aside' paddingX={5}>
-          <GenreList onSelectGenre={onSelectGenre} />
+          <GenreList
+            selectedGenre={selectedGenre}
+            onSelectGenre={onSelectGenre}
+          />
         </GridItem>
       </Show>
       // Main Game Grid
